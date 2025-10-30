@@ -1,21 +1,21 @@
 # Jenkins Shared Library
 
-This repo showcases extracting common build logic to a separate Jenkins shared library, that can be used in Jenkinsfiles for pipelines across an organization.
+This repo showcases extracting common build logic from Jenkins pipelines to a separate Jenkins shared library, that can be utilized in Jenkinsfiles across multiple teams/whole organization.
 
 ## Technologies
 
 Jenkins, Groovy, Docker, Git, Java, Maven
 
-## Structure of the repo
+## Project Structure
 
 ```
 .
 ├── README.md
 ├── src
 │   └── com
-│       └── example
+│       └── example // classes for organizing methods
 │           └── Docker.groovy
-└── vars
+└── vars // individual files for each extracted script
     ├── buildImage.groovy 
     ├── buildJar.groovy
     ├── dockerLogin.groovy
@@ -24,5 +24,5 @@ Jenkins, Groovy, Docker, Git, Java, Maven
 
 ## Steps:
 
-1. Identified common steps for a specific technology (Docker, Maven) that can be defined in one place and reused
+1. Identified common steps for a specific technology (Docker, Maven) that can be defined in one place and reused in Jenkinsfiles
 2. Extracted them to a separate Git repo, following https://www.jenkins.io/doc/book/pipeline/shared-libraries/
