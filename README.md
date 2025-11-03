@@ -11,11 +11,11 @@ Jenkins, Groovy, Docker, Git, Java, Maven
 ```
 .
 ├── README.md
-├── src
+├── src // helper code, classes for organizing methods
 │   └── com
-│       └── example // classes for organizing methods
+│       └── example 
 │           └── Docker.groovy
-└── vars // individual files for each extracted script
+└── vars // individual files for each extracted function called from Jenkinsfiles
     ├── buildImage.groovy 
     ├── buildJar.groovy
     ├── dockerLogin.groovy
