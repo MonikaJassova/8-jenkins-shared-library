@@ -21,9 +21,9 @@ Jenkins, Groovy, Docker, Git, Java, Maven
     ├── commitVersionUpdate.groovy
     ├── dockerLogin.groovy
     ├── dockerPush.groovy
-    ├── incrementVersionNode.groovy
-    ├── installDepsNode.groovy
-    └── testNode.groovy
+    ├── nodeIncrementVersion.groovy
+    ├── nodeInstallDeps.groovy
+    └── nodeTest.groovy
 ```
 
 ## Steps:
