@@ -18,6 +18,7 @@ Jenkins, Groovy, Docker, Git, Java, Maven
 └── vars // individual files for each extracted function called from Jenkinsfiles
     ├── buildImage.groovy
     ├── buildJar.groovy
+    ├── commitVersionUpdate.groovy
     ├── dockerLogin.groovy
     ├── dockerPush.groovy
     ├── incrementVersionNode.groovy
