@@ -16,10 +16,14 @@ Jenkins, Groovy, Docker, Git, Java, Maven
 │       └── example 
 │           └── Docker.groovy
 └── vars // individual files for each extracted function called from Jenkinsfiles
-    ├── buildImage.groovy 
+    ├── buildImage.groovy
     ├── buildJar.groovy
+    ├── commitVersionUpdate.groovy
     ├── dockerLogin.groovy
-    └── dockerPush.groovy
+    ├── dockerPush.groovy
+    ├── nodeIncrementVersion.groovy
+    ├── nodeInstallDeps.groovy
+    └── nodeTest.groovy
 ```
 
 ## Steps:
