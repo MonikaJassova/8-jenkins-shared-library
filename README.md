@@ -19,6 +19,7 @@ Jenkins, Groovy, Docker, Git, Java, Maven
     ├── buildImage.groovy
     ├── buildJar.groovy
     ├── commitVersionUpdate.groovy
+    ├── deployCompose.groovy
     ├── dockerLogin.groovy
     ├── dockerPush.groovy
     ├── nodeIncrementVersion.groovy
