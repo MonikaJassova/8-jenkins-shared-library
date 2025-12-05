@@ -28,7 +28,7 @@ class Docker implements Serializable {
         script.echo "Deploying the application..."
         def shellCmd = "bash ./server-cmds.sh $imageName"
  
-        script.sshagent(['ec2-server-key']) {
+        script.sshagent(['ec2-key']) {
             script.sh "scp server-cmds.sh ${ec2}:/home/ec2-user"
             script.sh "scp docker-compose.yaml ${ec2}:/home/ec2-user"
             script.sh "ssh -o StrictHostKeyChecking=no ${ec2} ${shellCmd}"
